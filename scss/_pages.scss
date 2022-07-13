@@ -1,0 +1,80 @@
+//Página Quienes Somos
+.textoQuienesSomos{
+	background-color: $colorAzulTransparente70;
+	padding: 1em;
+	line-height: 1.5em;
+    border-radius: 0.25rem;
+    max-width: 450px;
+}
+
+.videoQuienesSomos{
+	width: 450px;
+	max-width: 100%;
+	@media (min-width:576px) {
+		width: 450px;
+	}
+}
+
+
+//Página Obras
+section.card{
+	background-color: $colorAzulTransparente70;
+}
+
+.imgObras{
+	object-fit: cover;
+	height: 20em;	
+}
+
+.titulosObras{
+	font-size: 1.4em;
+	font-weight: 400;
+}
+
+//Página Servicios
+.titulosServicios{
+	list-style: none;
+	font-weight: 300;
+	background-color: $colorAzulTransparente70;
+	padding: 1em;
+	height: auto;
+	line-height: 1.5em;
+}
+
+//Página Contacto
+.form{
+	padding: 1em;
+	margin-bottom: 1em;
+	background-color: $colorAzulTransparente70;
+	border: solid 1px $colorAzul;
+	border-radius: 0.25rem;
+}
+
+.button{
+	color: $colorBlanco;
+	background-color: $colorAzulTransparente70;
+	border: $colorAzul 1px solid;	
+}
+
+input.button:hover {
+	color: $colorAmarillo;
+}
+
+fieldset.form{
+	h2{
+		color: $colorAmarillo;
+		font-weight: 400;
+	}
+	h3{
+		margin-top: 1em;
+		text-align: left;
+		font-weight: 400;
+		font-size: 1.2em;
+	}
+
+}
+
+.textColor{
+	width: 100%;
+	color: black;
+}

@@ -1,0 +1,47 @@
+.navbar-light .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-light .navbar-toggler {
+	border: rgba(255, 255, 255, 0) 1px solid;
+	&:hover{
+		border: $colorBlancoTransparente70 1px solid;
+	}
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: $colorBlancoTransparente70;
+	font-weight: 600;
+	&:active{
+		color: $colorBlanco;
+	}
+	@media (min-width: 992px) {
+		&:hover {
+		color: $colorBlanco;
+		}
+	}
+}
+
+.navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+#mainLogo{
+	font-size: 0.6em;
+	border: none;
+	background-color: rgba(0,0,0,0);
+	p{
+		padding-top: 1em;
+		font-weight: 600;
+	}
+}
+
+// ============Breakpoint: logo centra en tamaño lg bootstrap, cuando el botón hamburguesa se despliega============
+
+@media only screen and (min-width: 992px) {
+	.start-0 {
+		transform: translateX(-50%)!important;
+    	left: 50%!important;
+	}
+}

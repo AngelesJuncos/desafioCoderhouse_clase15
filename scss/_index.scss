@@ -1,0 +1,122 @@
+//Background home
+video{
+	min-width:100%;
+	min-height:100%;
+	width: auto;
+	height: auto;
+	position: fixed;
+	top:0;
+	left:0;
+	z-index: -100;
+	background-size: cover;
+}
+
+//Sección Construcción Segura
+.construccion {
+	text-align: center;
+	color: $colorAmarillo;
+	font-size: 2em;
+	font-weight: 800;
+	letter-spacing: .1em;
+	padding-left: .1em;
+	@media (min-width: 576px) {
+		font-size: 3.5em;
+	}
+	@media (min-width: 1200px) {
+		font-size: 4.5em;
+	}
+}
+
+.segura {
+	text-align: center;
+	font-size: 1.14em;
+	font-weight: 600;
+	color: $colorBlanco;
+	background-color: $colorAzulTransparente70;
+	letter-spacing: 0.3em;
+	padding-left: .3em;
+	margin: 0 .05em;
+	@media (min-width: 576px) {
+		font-size: 2em;
+	}
+	@media (min-width: 1200px) {
+		font-size: 2.5em;
+	}
+}
+
+.h2Home {
+	font-size: 3.5em;
+	font-weight: 400;
+	color: $colorAmarillo;
+	text-align: center;
+}
+
+//Sección Qué hacemos?
+.h3Home{
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+//Sección Obras
+article.contenedor{
+	position: relative;
+	height: 80vh;
+	padding: 0;
+	background-color: $colorAzul;
+	img{
+		object-fit: cover;
+		height: 80vh;
+		opacity: .5;
+	}
+}
+
+.textoEncimaCentrado{
+	text-align: center;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    h3{
+    	color: $colorAmarillo;
+		font-size: 1.8em;
+		line-height: 2.3em;
+		margin-bottom: 1em;
+    }
+    a{
+    	color: $colorAmarillo;
+		font-size: 1em;
+		text-decoration: none;
+		padding: 0.8em 1.5em;
+		border: solid $colorAmarillo 1px;
+		&:hover{
+			color: $colorAzul;
+			background-color: $colorAmarillo;
+		}
+    }
+}
+
+//Sección Contacto
+.iconMaps{
+	list-style-image: url('../images/icons/icon-maps.png');
+}
+
+.iconWhatsapp{
+	list-style-image: url('../images/icons/icon-whatsapp.png');
+}
+
+.iconMail{
+	list-style-image: url('../images/icons/icon-mail.png');
+}
+
+h3 strong{
+	font-weight: 300;
+}
+
+iframe.w-100{
+	object-fit: cover;
+	height: 80vh;
+	@media (min-width: 992px) {
+		max-width: 80%;
+		height: 64vh;
+	}
+}
