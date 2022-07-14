@@ -1,5 +1,5 @@
 footer{
-	background-color:$colorAzulTransparente50;
+	background-color:map-get($colores, azul50);
 	font-size: 0.8em;
 	width: 100%;
 	padding: 1em 0;
@@ -8,9 +8,9 @@ footer{
 	}
 	a{
 		text-decoration: none;
-		color: $colorBlancoTransparente70;
+		color: map-get($colores, blanco70);
 		&:hover{
-			color: $colorBlanco;
+			color: map-get($colores, blanco);
 		}
 	}
 	div{
@@ -27,11 +27,22 @@ footer ol, footer ul {
 	padding: 1em 0;
 }
 
+//PREGUNTAR! si pongo el svg dentro de la etiqueta <img>, luego desde el css, puedo cambiar los atributos width y height pero no así el fill
+// @each $icon in facebook, instagram {
+// 	img[src="images/icons/icon-#{$icon}.svg"]{
+// 			@include icon (32px, 32px, map-get($colores, azul));		
+// 	}
+// }
+
+footer svg{
+	@include icon (32px, 32px, map-get($colores, azul));
+}
+
 div.copyright {
 	text-align: center;
-	border-top: $colorAzul solid 1px;
+	border-top: map-get($colores, azul) solid 1px;
 	padding: 0;
-	background-color:$colorAzulTransparente50;
+	background-color:map-get($colores, azul50);
 	font-size: 0.8em;
 	p{
 		margin: 0;

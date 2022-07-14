@@ -1,7 +1,6 @@
 {
-  "name": "desafiocoderhouse_clase13",
+  "name": "desafiocoderhouse_clase15",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,16 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AngelesJuncos/desafioCoderhouse_clase13.git"
+    "url": "git+https://github.com/AngelesJuncos/desafioCoderhouse_clase15.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AngelesJuncos/desafioCoderhouse_clase13/issues"
+    "url": "https://github.com/AngelesJuncos/desafioCoderhouse_clase15/issues"
   },
-  "homepage": "https://github.com/AngelesJuncos/desafioCoderhouse_clase13#readme",
+  "homepage": "https://github.com/AngelesJuncos/desafioCoderhouse_clase15#readme",
   "dependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.19"
-  }
+  },
+  "description": ""
 }

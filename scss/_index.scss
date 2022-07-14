@@ -11,12 +11,16 @@ video{
 	background-size: cover;
 }
 
+//titulos secciones Home = titulos other pages
+.h2Home {
+	@extend .titulos;
+}
+
 //Sección Construcción Segura
 .construccion {
 	text-align: center;
-	color: $colorAmarillo;
-	font-size: 2em;
-	font-weight: 800;
+	color: map-get($colores, amarillo);
+	@include font (2em, $weight800);
 	letter-spacing: .1em;
 	padding-left: .1em;
 	@media (min-width: 576px) {
@@ -29,10 +33,9 @@ video{
 
 .segura {
 	text-align: center;
-	font-size: 1.14em;
-	font-weight: 600;
-	color: $colorBlanco;
-	background-color: $colorAzulTransparente70;
+	@include font (1.14em, $weight600);
+	color: map-get($colores, blanco);
+	background-color: map-get($colores, azul70);
 	letter-spacing: 0.3em;
 	padding-left: .3em;
 	margin: 0 .05em;
@@ -44,16 +47,10 @@ video{
 	}
 }
 
-.h2Home {
-	font-size: 3.5em;
-	font-weight: 400;
-	color: $colorAmarillo;
-	text-align: center;
-}
 
 //Sección Qué hacemos?
 .h3Home{
-	font-weight: 300;
+	font-weight: $weight300;
 	line-height: 1.5em;
 }
 
@@ -62,7 +59,7 @@ article.contenedor{
 	position: relative;
 	height: 80vh;
 	padding: 0;
-	background-color: $colorAzul;
+	background-color: map-get($colores, azul);
 	img{
 		object-fit: cover;
 		height: 80vh;
@@ -77,39 +74,33 @@ article.contenedor{
     left: 50%;
     transform: translate(-50%, -50%);
     h3{
-    	color: $colorAmarillo;
+    	color: map-get($colores, amarillo);
 		font-size: 1.8em;
 		line-height: 2.3em;
 		margin-bottom: 1em;
     }
     a{
-    	color: $colorAmarillo;
+    	color: map-get($colores, amarillo);
 		font-size: 1em;
 		text-decoration: none;
 		padding: 0.8em 1.5em;
-		border: solid $colorAmarillo 1px;
+		border: solid map-get($colores, amarillo) 1px;
 		&:hover{
-			color: $colorAzul;
-			background-color: $colorAmarillo;
+			color: map-get($colores, azul);
+			background-color: map-get($colores, amarillo);
 		}
     }
 }
 
 //Sección Contacto
-.iconMaps{
-	list-style-image: url('../images/icons/icon-maps.png');
-}
-
-.iconWhatsapp{
-	list-style-image: url('../images/icons/icon-whatsapp.png');
-}
-
-.iconMail{
-	list-style-image: url('../images/icons/icon-mail.png');
+@each $icon in maps, whatsapp, mail {
+	.icon-#{$icon}{
+		list-style-image: url('../images/icons/icon-#{$icon}.png');
+	}
 }
 
 h3 strong{
-	font-weight: 300;
+	font-weight: $weight300;
 }
 
 iframe.w-100{

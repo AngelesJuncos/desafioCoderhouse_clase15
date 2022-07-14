@@ -1,6 +1,10 @@
+h1{
+	@extend .titulos;
+}
+
 //Página Quienes Somos
 .textoQuienesSomos{
-	background-color: $colorAzulTransparente70;
+	background-color: map-get($colores, azul70);
 	padding: 1em;
 	line-height: 1.5em;
     border-radius: 0.25rem;
@@ -18,7 +22,7 @@
 
 //Página Obras
 section.card{
-	background-color: $colorAzulTransparente70;
+	background-color: map-get($colores, azul70);
 }
 
 .imgObras{
@@ -27,15 +31,14 @@ section.card{
 }
 
 .titulosObras{
-	font-size: 1.4em;
-	font-weight: 400;
+	@include font (1.4em, $weight400);
 }
 
 //Página Servicios
 .titulosServicios{
 	list-style: none;
-	font-weight: 300;
-	background-color: $colorAzulTransparente70;
+	font-weight: $weight300;
+	background-color: map-get($colores, azul70);
 	padding: 1em;
 	height: auto;
 	line-height: 1.5em;
@@ -45,31 +48,30 @@ section.card{
 .form{
 	padding: 1em;
 	margin-bottom: 1em;
-	background-color: $colorAzulTransparente70;
-	border: solid 1px $colorAzul;
+	background-color: map-get($colores, azul70);
+	border: solid 1px map-get($colores, azul);
 	border-radius: 0.25rem;
 }
 
 .button{
-	color: $colorBlanco;
-	background-color: $colorAzulTransparente70;
-	border: $colorAzul 1px solid;	
+	color: map-get($colores, blanco);
+	background-color: map-get($colores, azul70);
+	border: map-get($colores, azul) 1px solid;	
 }
 
 input.button:hover {
-	color: $colorAmarillo;
+	color: map-get($colores, amarillo);
 }
 
 fieldset.form{
 	h2{
-		color: $colorAmarillo;
-		font-weight: 400;
+		color: map-get($colores, amarillo);
+		font-weight: $weight400;
 	}
 	h3{
 		margin-top: 1em;
 		text-align: left;
-		font-weight: 400;
-		font-size: 1.2em;
+		@include font (1.2em, $weight400);
 	}
 
 }
