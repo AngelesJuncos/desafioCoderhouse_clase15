@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&family=Raleway:wght@200;300;400;600;800&display=swap');
+
+//Font-family
+$mainFont: 'Raleway', sans-serif;
+$secondFont: 'Montserrat', sans-serif;
+
+//Font-weight
+$weight200: 200;
+$weight300: 300;
+$weight400: 400;
+$weight600: 600;
+$weight800: 800;
+
+//Paleta de colores
+$colores: (
+	amarillo: rgb(236,179,101),
+	azul: rgb(4,28,50),
+	azul50: rgba(4,28,50, .5),
+	azul70: rgba(4,28,50, .7),
+	blanco: rgb(255,255,255),
+	blanco70: rgba(255,255,255,.7),
+	transparente: rgba(0,0,0,0),
+);
+//map-get($colores, nombreColor);
+
+// Mixins 
+@mixin font ($size, $weight){
+	font-size: $size;
+	font-weight: $weight;
+}
+//@include font (size, weight);
+
+@mixin icon ($width, $height, $fill){
+	width: $width;
+	height: $height;
+	fill: $fill;
+}
+//@include icon (width, height, fill);

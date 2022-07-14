@@ -5,19 +5,19 @@
 .navbar-light .navbar-toggler {
 	border: rgba(255, 255, 255, 0) 1px solid;
 	&:hover{
-		border: $colorBlancoTransparente70 1px solid;
+		border: map-get($colores, blanco70) 1px solid;
 	}
 }
 
 .navbar-light .navbar-nav .nav-link {
-	color: $colorBlancoTransparente70;
-	font-weight: 600;
+	color: map-get($colores, blanco70);
+	font-weight: $weight600;
 	&:active{
-		color: $colorBlanco;
+		color: map-get($colores, blanco);
 	}
 	@media (min-width: 992px) {
 		&:hover {
-		color: $colorBlanco;
+		color: map-get($colores, blanco);
 		}
 	}
 }
@@ -30,10 +30,10 @@
 #mainLogo{
 	font-size: 0.6em;
 	border: none;
-	background-color: rgba(0,0,0,0);
+	background-color: map-get($colores, transparente);
 	p{
 		padding-top: 1em;
-		font-weight: 600;
+		font-weight: $weight600;
 	}
 }
 

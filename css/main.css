@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&family=Raleway:wght@200;300;400;600;800&display=swap");
 * {
-  font-family: 'Raleway', sans-serif;
-  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  color: white;
   box-sizing: border-box; }
 
 body {
@@ -19,7 +19,7 @@ body {
   background-repeat: no-repeat;
   position: relative; }
 
-h1 {
+.titulos, .h2Home, h1 {
   font-size: 3.5em;
   font-weight: 400;
   color: #ecb365;
@@ -109,12 +109,6 @@ video {
     .segura {
       font-size: 2.5em; } }
 
-.h2Home {
-  font-size: 3.5em;
-  font-weight: 400;
-  color: #ecb365;
-  text-align: center; }
-
 .h3Home {
   font-weight: 300;
   line-height: 1.5em; }
@@ -150,13 +144,13 @@ article.contenedor {
       color: #041c32;
       background-color: #ecb365; }
 
-.iconMaps {
+.icon-maps {
   list-style-image: url("../images/icons/icon-maps.png"); }
 
-.iconWhatsapp {
+.icon-whatsapp {
   list-style-image: url("../images/icons/icon-whatsapp.png"); }
 
-.iconMail {
+.icon-mail {
   list-style-image: url("../images/icons/icon-mail.png"); }
 
 h3 strong {
@@ -188,6 +182,11 @@ footer {
 footer ol, footer ul {
   margin: 0;
   padding: 1em 0; }
+
+footer svg {
+  width: 32px;
+  height: 32px;
+  fill: #041c32; }
 
 div.copyright {
   text-align: center;
@@ -253,8 +252,8 @@ fieldset.form h2 {
 fieldset.form h3 {
   margin-top: 1em;
   text-align: left;
-  font-weight: 400;
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  font-weight: 400; }
 
 .textColor {
   width: 100%;
